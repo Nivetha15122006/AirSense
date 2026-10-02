@@ -1,0 +1,68 @@
+{
+  "Linear Regression": {
+    "type": "baseline",
+    "cv_r2_mean": 0.8965,
+    "cv_r2_std": 0.0109,
+    "train_r2": 0.8984,
+    "test_r2": 0.9141,
+    "train_mae": 24.7,
+    "test_mae": 16.11,
+    "train_rmse": 47.38,
+    "test_rmse": 26.37,
+    "overfit_gap_r2": -0.0157,
+    "status": "Robust"
+  },
+  "Decision Tree": {
+    "type": "baseline",
+    "cv_r2_mean": 0.8862,
+    "cv_r2_std": 0.0097,
+    "train_r2": 0.9271,
+    "test_r2": 0.9137,
+    "train_mae": 21.33,
+    "test_mae": 15.04,
+    "train_rmse": 40.13,
+    "test_rmse": 26.44,
+    "overfit_gap_r2": 0.0134,
+    "status": "Robust"
+  },
+  "Random Forest": {
+    "type": "individual_ensemble",
+    "cv_r2_mean": 0.9193,
+    "cv_r2_std": 0.0114,
+    "train_r2": 0.9659,
+    "test_r2": 0.9409,
+    "train_mae": 12.29,
+    "test_mae": 11.34,
+    "train_rmse": 27.46,
+    "test_rmse": 21.88,
+    "overfit_gap_r2": 0.025,
+    "status": "Robust"
+  },
+  "Gradient Boosting": {
+    "type": "individual_ensemble",
+    "cv_r2_mean": 0.9217,
+    "cv_r2_std": 0.0089,
+    "train_r2": 0.9696,
+    "test_r2": 0.9409,
+    "train_mae": 15.67,
+    "test_mae": 11.89,
+    "train_rmse": 25.92,
+    "test_rmse": 21.87,
+    "overfit_gap_r2": 0.0287,
+    "status": "Robust"
+  },
+  "Stacking Ensemble": {
+    "type": "stacking_ensemble",
+    "description": "Random Forest + Gradient Boosting base estimators with Linear Regression meta-learner (5-fold internal CV)",
+    "cv_r2_mean": 0.9205,
+    "cv_r2_std": 0.0101,
+    "train_r2": 0.9704,
+    "test_r2": 0.9433,
+    "train_mae": 13.34,
+    "test_mae": 11.27,
+    "train_rmse": 25.6,
+    "test_rmse": 21.42,
+    "overfit_gap_r2": 0.0271,
+    "status": "Optimal Generalization"
+  }
+}

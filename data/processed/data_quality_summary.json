@@ -1,0 +1,73 @@
+{
+  "initial_total_records": 29531,
+  "records_with_ground_truth_aqi": 24850,
+  "cities_count": 26,
+  "cities_list": [
+    "Ahmedabad",
+    "Aizawl",
+    "Amaravati",
+    "Amritsar",
+    "Bengaluru",
+    "Bhopal",
+    "Brajrajnagar",
+    "Chandigarh",
+    "Chennai",
+    "Coimbatore",
+    "Delhi",
+    "Ernakulam",
+    "Gurugram",
+    "Guwahati",
+    "Hyderabad",
+    "Jaipur",
+    "Jorapokhar",
+    "Kochi",
+    "Kolkata",
+    "Lucknow",
+    "Mumbai",
+    "Patna",
+    "Shillong",
+    "Talcher",
+    "Thiruvananthapuram",
+    "Visakhapatnam"
+  ],
+  "date_range": {
+    "start": "2015-01-01",
+    "end": "2020-07-01"
+  },
+  "fake_zeros_addressed": {
+    "NOx": 740,
+    "CO": 2328
+  },
+  "initial_missing_counts": {
+    "PM2.5": 4598,
+    "PM10": 11140,
+    "NO": 3582,
+    "NO2": 3585,
+    "NOx": 4185,
+    "NH3": 10328,
+    "CO": 2059,
+    "SO2": 3854,
+    "O3": 4022,
+    "AQI": 4681
+  },
+  "final_missing_counts": {
+    "PM2.5": 0,
+    "PM10": 0,
+    "NO": 0,
+    "NO2": 0,
+    "NOx": 0,
+    "NH3": 0,
+    "CO": 0,
+    "SO2": 0,
+    "O3": 0,
+    "AQI": 0,
+    "PM_Ratio": 0,
+    "AQI_lag1": 0
+  },
+  "imputation_methods": [
+    "1. Zero-inflated sensor dropout replacement with NaN",
+    "2. City-level temporal forward-fill",
+    "3. City x Month seasonal median imputation",
+    "4. City median and nationwide monthly median hierarchical fallback"
+  ]
+}
